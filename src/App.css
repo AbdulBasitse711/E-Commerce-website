@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Orbitron:wght@400..900&display=swap');
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 7s linear infinite;
+}
+
+.font-josefin{
+  font-family: 'josefin sans';
+}
+
+#logo{
+  font-family: orbitron;
+  font-size: 30px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke : 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.header:hover  nav li{
+  transition-duration: 0.5s;
+  color: black;
+}
+.header:hover  .filter {
+  filter: invert(0%) brightness(0%);
+}
+.header:hover  {
+  transition: all;
+  transition-duration: 0.5s;
+  background-color: white;
+}
+.header:hover  #logo{
+  transition-duration: 0.5s;
+  color: black;
+  -webkit-text-stroke-color: black;
+}
+
+.header  nav li{
+  color: black;
+}
+.header  .filter {
+  filter: invert(0%) brightness(0%);
+}
+.header  {
+  background-color: white;
+}
+.header  #logo{
+  color: black;
+  -webkit-text-stroke-color: black;
+}
+
+.main{
+  /* background-image: url(https://edenrobe.com/cdn/shop/files/Slider_copy_1920x900_crop_center.webp?v=1715171083); */
+  background-repeat: no-repeat;
+}

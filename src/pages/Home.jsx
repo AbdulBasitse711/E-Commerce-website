@@ -3,8 +3,12 @@ import React, { useEffect, useState } from 'react'
 import { Container, ProductCard } from '../components'
 import ImageSlider from '../components/main/ImageSlider';
 import Categories from '../components/main/Categories';
+import { setProducts } from '../store/productsSlice'
+import { useDispatch } from 'react-redux';
 
 function Home() {
+
+    const dispatch = useDispatch()
 
     let dataAPI = [
         {
@@ -33,7 +37,7 @@ function Home() {
                         "images": [
                             {
                                 "rel": "assets",
-                                "href": "https://cdn.mafrservices.com/sys-master-root/hd5/h7e/49901976846366/4703_main.jpg?im=Resize=200",
+                                "href": "https://cdn.mafrservices.com/sys-master-root/hd5/h7e/49901976846366/4703_main.jpg?im=",
                                 "type": "GET",
                                 "kind": "image",
                                 "properties": {
@@ -5415,11 +5419,16 @@ function Home() {
                 }
             ]
         }
+
     ]
+
+    useEffect(() => {
+        dispatch(setProducts({ dataAPI }));
+    });
 
 
     return (
-        <>
+        <div className='pt-16'>
             <section className='h-52  w-full my-6 
             '>
                 <ImageSlider />
@@ -5475,7 +5484,7 @@ function Home() {
                 </div>
             </section>
 
-        </>
+        </div>
     )
 }
 

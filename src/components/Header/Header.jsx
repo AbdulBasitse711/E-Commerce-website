@@ -4,8 +4,9 @@ import { Container, Logo, LogoutBtn } from '../index'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import Navbar from '../../navbar/Navbar'
+import Navbar from './navbar/Navbar'
 import Announcement from './announcement-bar/Announcement'
+import { useParams } from 'react-router-dom'
 
 function Header() {
   const authStatus = useSelector((state) => state.auth.status)
@@ -15,32 +16,33 @@ function Header() {
   const [headerColor, setHeaderColor] = useState('backdrop-blur-xl bg-emerald-400/15')
 
 
+
   let primaryColor = 'bg-emerald-400'
 
   const navItems = [
     {
-      name: 'Fasion',
-      slug: "/fasion",
+      name: 'Fashion',
+      slug: "/fashion",
       active: true,
       Children: [
         {
           name: 'Men',
-          slug: "/fasion/men",
+          slug: "/fashion/men",
           active: true
         },
         {
           name: 'Women',
-          slug: "/fasion/women",
+          slug: "/fashion/women",
           active: true
         },
         {
           name: 'Boys',
-          slug: "/fasion/boy",
+          slug: "/fashion/boys",
           active: true
         },
         {
           name: 'Girls',
-          slug: "/fasion/girls",
+          slug: "/fashion/girls",
           active: true
         }
       ]
@@ -64,34 +66,34 @@ function Header() {
     },
     {
       name: "Cleaning & Household",
-      slug: "/cleaning-and-Household",
+      slug: "/cleaning-&-Household",
       active: true,
       Children: [
         {
           name: 'Cleaning Supplies',
-          slug: "/cleaning-and-Household/cleaning-upplies",
+          slug: "/cleaning-&-Household/cleaning-supplies",
           active: true
         },
         {
           name: 'Disposable Tableware',
-          slug: "/cleaning-and-Household/disposable-tableware",
+          slug: "/cleaning-&-Household/disposable-tableware",
           active: true
         }
       ]
     },
     {
       name: "Phone & Accessories",
-      slug: "/phone-and-accessories",
+      slug: "/phone-&-accessories",
       active: true,
-      Children:[
+      Children: [
         {
           name: "Mobile Accessories",
-          slug: "/phone-and-accessories/mobile-accessories",
+          slug: "/phone-&-accessories/mobile-accessories",
           active: true
         },
         {
           name: "Smartphones & Wearables",
-          slug: "/phone-and-ccessories/smartphones-and-wearables",
+          slug: "/phone-&-ccessories/smartphones-and-wearables",
           active: true
         }
       ]
@@ -100,11 +102,32 @@ function Header() {
       name: "Sale",
       slug: "/sale",
       active: authStatus,
-      Children:[
+      Children: [
         //add sales
       ]
     },
   ]
+
+
+  // function findParentBySlug(slug, parent) {
+  //   for (const child of parent.children) {
+  //     if (child.slug === slug) {
+  //       return parent;
+  //     }
+  //   }
+  //   return null;
+  // }
+
+
+  // const parent = findParentBySlug((subcategory, navItems) => {
+  //   for (const child of navItems.children) {
+  //     if (child.slug === subcategory) {
+  //       return parent;
+  //     }
+  //   }
+  // });
+
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -132,7 +155,7 @@ function Header() {
 
               </Link>
             </div>
-            <Navbar data={navItems}/>
+            <Navbar data={navItems} />
 
 
             <div className='flex w-full justify-end items-center gap-5'>
@@ -152,27 +175,11 @@ function Header() {
                 <LogoutBtn />
               </button>}
             </div>
-            {/* <ul className='flex ml-auto'>
-            {navItems.map((item) => 
-            item.active ? (
-              <li key={item.name}>
-                <button
-                onClick={() => navigate(item.slug)}
-                className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
-                >{item.name}</button>
-              </li>
-            ) : null
-            )}
-            {authStatus && (
-              <li>
-                <LogoutBtn />
-              </li>
-            )}
-          </ul> */}
+
           </nav>
         </Container>
       </header>
-      {/* {isSticky && <div style={{ height: '4rem' }}></div>} */}
+      
     </>
   )
 }

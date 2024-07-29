@@ -6,10 +6,12 @@ import authService from "./appwrite/auth"
 import { login, logout } from "./store/authSlice"
 import { Footer, Header } from './components'
 import { Outlet } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 function App() {
   const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
+  
 
   useEffect(() => {
     authService.getCurrentUser()
@@ -27,7 +29,7 @@ function App() {
     <div className='min-h-screen flex flex-wrap content-between main'>
       <div className='w-full block'>
         <Header />
-        <main className='pt-16'>
+        <main >
           <Outlet />
         </main>
         <Footer />

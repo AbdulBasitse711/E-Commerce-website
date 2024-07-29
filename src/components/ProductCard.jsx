@@ -2,7 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 
-function ProductCard({ data, initialVisibleCount,i }) {
+function ProductCard({ data, initialVisibleCount, i }) {
     const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
     const [products] = useState(data[i].recommendedProducts);
 
@@ -41,8 +41,10 @@ function ProductCard({ data, initialVisibleCount,i }) {
                                     {d.price.discount && <p className='text-gray-500 text-sm line-through'>{d.price.formattedValue}</p>}
                                     <span className='text-sm text-red-600'>{d.price.discount && Math.floor(100 - d.price.discount.price * 100 / d.price.price) + '% OFF'}</span>
                                 </div>
-                                <div className={`${!d.price.discount && "pt-4"} text-sm text-ellipsis font-thin pl-2 w-full h-auto flex gap-1 text-center`}>
-                                    {d.name.length > 60 ? d.name.substr(0, 60) + "...." : d.name}
+                                <div className={`${!d.price.discount && "pt-4"}  text-sm text-ellipsis font-thin pl-2 w-full h-auto flex gap-1 text-center`}>
+                                    <p title={d.name}>
+                                        {d.name.length > 60 ? d.name.substr(0, 60) + "...." : d.name}
+                                    </p>
                                 </div>
                             </div>
                         </button>

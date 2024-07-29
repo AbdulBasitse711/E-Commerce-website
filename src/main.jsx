@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home.jsx'
 import { AuthLayout, Login } from './components/index.js'
 import Loader from './pages/Loader.jsx'
+import CategoriesDetailProducts from './pages/CategoriesDetailProducts.jsx'
 
 
 import Signup from './pages/Signup'
@@ -38,6 +39,20 @@ const router = createBrowserRouter([
                         <Signup />
                     </AuthLayout>
                 ),
+            },
+            {
+                path: "/categories/:category",
+                element: (
+                    <CategoriesDetailProducts />
+                ),
+                children: [
+                    {
+                        path: "/categories/:category/:subcategory",
+                        element: (
+                            <CategoriesDetailProducts />
+                        ),
+                    }
+                ]
             },
         ],
     },

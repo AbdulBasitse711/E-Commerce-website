@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+// eslint-disable-next-line react/prop-types
 function Navbar({ data }) {
     const navData = data;
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ function Navbar({ data }) {
                                         }, 300);
                                     }}
                                 >
-                                    <button onClick={() => navigate(item.slug)}>{item.name}</button>
+                                    <button onClick={() => navigate(`/categories${item.slug}`)}>{item.name}</button>
                                     {isHovered === i && navData[i]?.Children?.length > 0 && (
                                         <div 
                                             className="absolute z-10 top-full left-0 mt-3 py-2 bg-emerald-400 rounded shadow-lg"
@@ -41,7 +42,7 @@ function Navbar({ data }) {
                                                     subItem.active && (
                                                         <li key={subItem.slug} className="py-1">
                                                             <button
-                                                                onClick={() => navigate(subItem.slug)}
+                                                                onClick={() => navigate(`/categories${subItem.slug}`)}
                                                                 className="text-white hover:text-gray-200"
                                                             >
                                                                 {subItem.name}

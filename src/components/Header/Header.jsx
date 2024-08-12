@@ -70,6 +70,11 @@ function Header() {
       active: true,
       Children: [
         {
+          name: 'Groceries',
+          slug: "/cleaning-&-Household/groceries",
+          active: true
+        },
+        {
           name: 'Cleaning Supplies',
           slug: "/cleaning-&-Household/cleaning-supplies",
           active: true

@@ -1,10 +1,15 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { setProductIndex, setproductId } from '../store/productsSlice';
 
 function ProductCard({ data, initialVisibleCount, i }) {
     const [visibleCount, setVisibleCount] = useState(initialVisibleCount);
     const [products] = useState(data[i].recommendedProducts);
+
+    const dispatch = useDispatch()
 
     const handleViewMore = () => {
         setVisibleCount(prevCount => prevCount + 12);
@@ -18,7 +23,10 @@ function ProductCard({ data, initialVisibleCount, i }) {
         <div className='flex flex-col items-center'>
             <div className='flex flex-wrap justify-center gap-4'>
                 {products.slice(0, visibleCount).map((d, k) => (
-                    <div key={k} className='h-[330px] bg-white w-[200px] rounded-xl flex flex-col group hover:bg-emerald-400/15'>
+                    <Link to={`/${d.category?d.category : 'product'}/${d.name.replace(/\s+/g, '-')}`} key={k} onClick={() => {
+                        dispatch(setProductIndex(k))
+                        dispatch(setproductId(i))
+                    }} className='h-[330px] bg-white w-[200px] rounded-xl flex flex-col group hover:bg-emerald-400/15'>
                         <button onClick={() => { /* Add your click handler logic here */ }}>
                             <div className='pt-2'>
                                 <div className='flex justify-center w-full h-40'>
@@ -48,7 +56,7 @@ function ProductCard({ data, initialVisibleCount, i }) {
                                 </div>
                             </div>
                         </button>
-                    </div>
+                    </Link>
                 ))}
             </div>
             <div className='w-full flex justify-center mt-4'>

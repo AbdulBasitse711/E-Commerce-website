@@ -19,6 +19,7 @@ function Home() {
                     "name": "National Iodized Salt 800 gr",
                     "type": "FOOD",
                     "size": "800g",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 65,
@@ -37,7 +38,8 @@ function Home() {
                         "images": [
                             {
                                 "rel": "assets",
-                                "href": "https://cdn.mafrservices.com/sys-master-root/hd5/h7e/49901976846366/4703_main.jpg?im=",
+                                "href": "https://cdn.mafrservices.com/sys-master-root/hd5/h7e/49901976846366/4703_main.jpg?im=Resize=200",
+                                "hrefhd": "https://cdn.mafrservices.com/sys-master-root/hd5/h7e/49901976846366/4703_main.jpg?im=",
                                 "type": "GET",
                                 "kind": "image",
                                 "properties": {
@@ -48,7 +50,7 @@ function Home() {
                             },
                             {
                                 "rel": "assets",
-                                "href": "https://cdn.mafrservices.com/sys-master-root/hb1/ha4/9839848685598/4703_1.jpg?im=Resize=200",
+                                "href": "https://cdn.mafrservices.com/sys-master-root/hb1/ha4/9839848685598/4703_1.jpg?im=_1.jpg?im=",
                                 "type": "GET",
                                 "kind": "image",
                                 "properties": {
@@ -63,6 +65,7 @@ function Home() {
                 {
                     "name": "Dalda Fortified Vtf Banaspati Poly Bag 1 lt (Pack of 5)",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 2415,
@@ -171,6 +174,7 @@ function Home() {
                 {
                     "name": "National Refined Salt 800 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 65,
@@ -215,6 +219,7 @@ function Home() {
                 {
                     "name": "National Biryani Recipe Mix 78 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "size": "90g",
                     "price": {
                         "currency": "PKR",
@@ -249,6 +254,7 @@ function Home() {
                 {
                     "name": "Cheetos Flamin Hot 46 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 56,
@@ -285,6 +291,7 @@ function Home() {
                 {
                     "name": "Lay&#39;s French Cheese Potato Chips 55 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 58,
@@ -321,6 +328,7 @@ function Home() {
                 {
                     "name": "National Tomato Ketchup 800 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 365,
@@ -388,6 +396,7 @@ function Home() {
 
                     "name": "National Biryani Recipe Mix 39 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "size": "45g",
                     "price": {
                         "currency": "PKR",
@@ -423,6 +432,7 @@ function Home() {
                 {
                     "name": "Knorr Tomato Ketchup Real Tomatoes 800 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 395,
@@ -459,6 +469,7 @@ function Home() {
                 {
                     "name": "Young&#39;S Mayonnaise Stand Up Pouch 1 lt",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 580,
@@ -515,6 +526,7 @@ function Home() {
 
                     "name": "Rafhan Dessert Strawberry Jelly 80 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 170,
@@ -562,6 +574,7 @@ function Home() {
                 {
                     "name": "Knorr  Chatt Patta Noodle 200 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 190,
@@ -587,6 +600,7 @@ function Home() {
                 {
                     "name": "Lay&#39;s Masala Potato Chips 55 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 58,
@@ -623,6 +637,7 @@ function Home() {
                 {
                     "name": "Knorr Noodles Chicken Family (Pack of 6)",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 285,
@@ -648,6 +663,7 @@ function Home() {
                 {
                     "name": "Young&rsquo;s Mayonnaise Pouch 500 ml",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 335,
@@ -703,6 +719,7 @@ function Home() {
                 {
                     "name": "National Tomato Ketchup 400 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 210,
@@ -758,6 +775,7 @@ function Home() {
                 {
                     "name": "Ganj Sugar 1 kg",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 180,
@@ -791,6 +809,7 @@ function Home() {
                 {
                     "name": "Aghaaz Cooking Oil Poly Bags 1 lt (Pack of 5)",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 2350,
@@ -838,6 +857,7 @@ function Home() {
                 {
                     "name": "National Karahi Ghosht Recipe Mix 47 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 130,
@@ -871,6 +891,7 @@ function Home() {
                 {
                     "name": "Lay&#39;s Yogurt &amp; Herb Potato Chips 55 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 58,
@@ -907,6 +928,7 @@ function Home() {
                 {
                     "name": "Sufi Special Banaspati 1kg (Pack of 5)",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 2490,
@@ -984,6 +1006,7 @@ function Home() {
                 {
                     "name": "National Qorma Recipe Mix 86 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 250,
@@ -1017,6 +1040,7 @@ function Home() {
                 {
                     "name": "Rafhan Cornflour 275 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 185,
@@ -1108,6 +1132,7 @@ function Home() {
                 {
                     "name": "Lay&#39;s Classic Potato Chips 55 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 58,
@@ -1144,6 +1169,7 @@ function Home() {
                 {
                     "name": "Shangrila Synthetic Vinegar 800 ml",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 200,
@@ -1221,6 +1247,7 @@ function Home() {
                 {
                     "name": "Sunridge Chakki Atta (Wheat Flour) 5 kg",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 780,
@@ -1265,6 +1292,7 @@ function Home() {
                 {
                     "name": "Knorr Chicken Soup Cube 18 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 74,
@@ -1323,6 +1351,7 @@ function Home() {
                 {
                     "name": "Shangrila Tomato Ketchup Economy Pack 800 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "size": "800 gr",
                     "price": {
                         "currency": "PKR",
@@ -1401,6 +1430,7 @@ function Home() {
                 {
                     "name": "Shan Special Bombay Biryani 130 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "size": "120g",
                     "price": {
                         "currency": "PKR",
@@ -1446,6 +1476,7 @@ function Home() {
                 {
                     "name": "Shan Shoop Instant Chattpata Noodles 65 gr (Pack of 4)",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 260,
@@ -1512,6 +1543,7 @@ function Home() {
                 {
                     "name": "Rafhan Dessert Banana Jelly 80 gr",
                     "type": "FOOD",
+                    "category": "grocery",
                     "size": "80g",
                     "price": {
                         "currency": "PKR",
@@ -1560,6 +1592,7 @@ function Home() {
                 {
                     "name": "Ganj Sugar 2 kg",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 360,
@@ -1593,6 +1626,7 @@ function Home() {
                 {
                     "name": "Ganj Sugar 5 kg",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 890,
@@ -1626,6 +1660,7 @@ function Home() {
                 {
                     "name": "Mezan Cooking Oil Pillow Pouche 1 lt (Pack of 5)",
                     "type": "FOOD",
+                    "category": "grocery",
                     "price": {
                         "currency": "PKR",
                         "price": 2675,
@@ -5423,7 +5458,7 @@ function Home() {
     ]
 
     useEffect(() => {
-        dispatch(setProducts({ dataAPI }));
+        dispatch(setProducts(dataAPI));
     });
 
 

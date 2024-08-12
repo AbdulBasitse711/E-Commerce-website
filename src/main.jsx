@@ -12,6 +12,7 @@ import CategoriesDetailProducts from './pages/CategoriesDetailProducts.jsx'
 
 
 import Signup from './pages/Signup'
+import ProductDescription from './pages/ProductDescription.jsx'
 
 
 
@@ -53,6 +54,12 @@ const router = createBrowserRouter([
                         ),
                     }
                 ]
+            },
+            {
+                path: "/:product/:productname",
+                element: (
+                    <ProductDescription />
+                ),
             },
         ],
     },
